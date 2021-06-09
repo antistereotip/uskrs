@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://usk.rs/$1 [R,L]
+# ErrorDocument 404 "<H1>nema stranice</H1>"
+ErrorDocument 404 https://usk.rs/404.html
