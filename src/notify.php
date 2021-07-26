@@ -38,7 +38,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	return 0;
 }
 $podaci = array($datum, $email);
-file_put_contents('email.txt', implode(' || ',$podaci)."\n",FILE_APPEND | LOCK_EX);
+file_put_contents('../secured/email.txt', implode(' || ',$podaci)."\n",FILE_APPEND | LOCK_EX);
 
 
 // Poruka
