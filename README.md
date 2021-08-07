@@ -12,7 +12,7 @@
 - Uprava je prva linija odbrane zemlje prilikom cyber napada.
 - Uprava će posedovati najmoderniju opremu kao i inovativne metode za cyber operacije.
 
-*RIP Danilo Bogdanov.*
+*RIP Danilo Bogdanov. Tvoj um će živeti kroz ovaj projekat.*
 
 <p>
  <img src="https://github.com/antistereotip/uskrs/blob/master/uskrs.jpg" width="170" />
@@ -25,3 +25,7 @@
 ## Adresa:
 
 - https://usk.rs
+
+## Sredstva:
+
+- NEMA
