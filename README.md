@@ -17,7 +17,7 @@
 *RIP Danilo Bogdanov. Tvoj um će živeti kroz ovaj projekat.*
 
 <p>
- <img src="https://github.com/antistereotip/uskrs/blob/master/uskrs.jpg" width="170" />
+ <img src="https://github.com/antistereotip/uskrs/blob/master/cirilica-uskrs.jpg" width="170" />
 </p>
 
 ## Dokumentacija:
