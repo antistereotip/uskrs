@@ -5,7 +5,7 @@
 - Uprava nema limite.
 
 <p>
- <img src="https://github.com/antistereotip/uskrs/blob/master/uskrs.jpg" width="200" />
+ <img src="https://github.com/antistereotip/uskrs/blob/master/uskrs.jpg" width="170" />
 </p>
 
 ## Dokumentacija:
