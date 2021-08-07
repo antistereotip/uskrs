@@ -1,4 +1,4 @@
-## USKRS - Uprava Srpske Kibernetike 
+## USK.RS - Uprava Srpske Kibernetike 
 
 ### Molimo budite strpljivi. Projekat je u pripremi.
 
