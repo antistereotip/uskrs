@@ -2,10 +2,17 @@
 
 ### Molimo budite strpljivi. Projekat je u pripremi.
 
-- Uprava Srpske Kibernetike je projekat koji ima za cilj da stvori industriju roboticke industrije i inovacije na tom polju.
+*Ciljevi uprave i vizija.*
+
+- Uprava Srpske Kibernetike je projekat koji ima za cilj da stvori industriju robotičke industrije i inovacije na tom polju.
 - Uprava ima za cilj da stvori integritet i suverenitet jedne ozbiljne kompanije.
 - Uprava nema limite.
 - Uprava je otvorenog koda.
+- Vizija uprave je cyber štit i autonomno postrojenje robotičkih konstrukcija.
+- Uprava je prva linija odbrane zemlje prilikom cyber napada.
+- Uprava će posedovati najmoderniju opremu kao i inovativne metode za cyber operacije.
+
+*RIP Danilo Bogdanov.*
 
 <p>
  <img src="https://github.com/antistereotip/uskrs/blob/master/uskrs.jpg" width="170" />
