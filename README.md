@@ -22,10 +22,11 @@
  
 - NEMA, ALI BIĆE ...
 
-## Adresa:
-
-- https://usk.rs
-
 ## Sredstva:
 
 - NEMA, ALI BIĆE ...
+
+## Linkovi:
+
+- https://usk.rs
+- https://github.com/antistereotip/uskrs/blob/master/ZlatniBroj.pdf
