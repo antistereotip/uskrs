@@ -20,7 +20,7 @@
 
 ## Dokumentacija:
  
-- NEMA
+- NEMA, ALI BIĆE ...
 
 ## Adresa:
 
@@ -28,4 +28,4 @@
 
 ## Sredstva:
 
-- NEMA
+- NEMA, ALI BIĆE ...
