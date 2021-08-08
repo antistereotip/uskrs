@@ -1,5 +1,7 @@
 ## USK.RS - Uprava Srpske Kibernetike 
 
+<img src="http://ForTheBadge.com/images/badges/built-with-love.svg" />
+
 ### Molimo budite strpljivi. Projekat je u pripremi.
 
 *Ciljevi uprave i vizija.*
