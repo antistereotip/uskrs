@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html>
+	<link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'/>
+	<head>
+		<script src="jquery.min.js"></script>
+		<script src="jquery-ui.js"></script>
+		<script src="rotate-lib.js"></script>
+		<script>
+
+			function displayunicode(e){
+			    var unicode=e.keyCode? e.keyCode : e.charCode;
+			    if (e.altKey || e.ctrlKey || e.shiftKey)
+        			alert("you pressed one of the 'Alt', 'Ctrl', or 'Shift' keys");
+        		else
+				    alert(String.fromCharCode(unicode));
+			}
+			var data={
+				"number": "5",
+				"language0": "JavaScript",
+				"language1": "C++"
+			}
+			function statica(){
+				document.getElementById("innerheight").innerHTML = window.innerHeight;
+				document.getElementById("outerheight").innerHTML = window.outerHeight;
+				document.getElementById("innerwidth").innerHTML = window.innerWidth;
+				document.getElementById("outerwidth").innerHTML = window.outerWidth;
+				document.getElementById("clientwidth").innerHTML = document.getElementById("div_1").clientWidth;
+				document.getElementById("clientheight").innerHTML = document.getElementById("div_1").clientHeight;
+			}
+			function move_func(e){
+				document.getElementById("rand").innerHTML=Math.random();
+				document.getElementById("rand100").innerHTML=Math.round(Math.random()*100);
+				document.getElementById("rand2").innerHTML=Math.round(Math.random());
+				document.getElementById("clientx").innerHTML=e.clientX;
+				document.getElementById("clienty").innerHTML=e.clientY;
+				document.getElementById("offsetx").innerHTML=e.offsetX;
+				document.getElementById("offsety").innerHTML=e.offsetY;
+			}
+			function inslide(){
+				$("div_2").style.top="0";
+			}
+			function outslide(){
+				$("div_2").style.top="100%";
+			}
+			function date(){
+				var today_date= new Date()
+//				var myyear=today_date.getFullYear()
+//				var mymonth=today_date.getMonth()+1
+//				var mytoday=today_date.getDate()
+				var myNow=Math.round(today_date.getTime() / 1000);
+				document.getElementById("datum").style.display = "block";
+				document.getElementById("datum").innerHTML = "UST: "
+				document.getElementById("datum").innerHTML += myNow + "<br/>"
+				document.getElementById("datum").innerHTML += "Local time: "
+				if (today_date.getHours() < 10 )
+					document.getElementById("datum").innerHTML += "0"
+				document.getElementById("datum").innerHTML += today_date.getHours() + ":"
+				if (today_date.getMinutes() < 10 )
+					document.getElementById("datum").innerHTML += "0"
+				document.getElementById("datum").innerHTML += today_date.getMinutes() + ":"
+				if (today_date.getSeconds() < 10 )
+					document.getElementById("datum").innerHTML += "0"
+				document.getElementById("datum").innerHTML += today_date.getSeconds() + "<br/>"
+			}
+			window.onload = function (e){
+			document.getElementById("test").innerHTML="data.number = " + data.number + "<br/>" + "data.language0 = " + data.language0 + "<br/>" + "data.language1 = " + data.language1 + "<br/>";;
+				function effect(){
+					date();
+					$('#div_1').rotate({ count:3, duration:0.15, easing:'ease-in'});
+					$("#div_1").animate({left: '0px'}, 120, function(){
+//						$("#image").animate({width:'1000%'}, 1500, function(){
+							$(this).animate({left: '100%'}, 512, function(){
+								$(this).animate({opacity:'0'}, 1, function(){
+//									$(this).animate({width:"15%"}, 1, function(){
+										$(this).animate({left:'250px'}, 1, function(){
+											$(this).animate({opacity:'1'}, 1000, function(){});
+										});
+//									});
+								});
+							});
+//						});
+					});
+				};
+				document.addEventListener("keyup", displayunicode);
+				document.addEventListener("click", effect);
+				$("#bst").on("mouseover",function(){
+					document.removeEventListener("click", effect);
+				});
+				$("#bst").on("mouseout",function(){
+					document.addEventListener("click", effect);
+				});
+				$("#bst").on("click",function(){
+					$('#bst').rotate({ count:3, duration:0.15, easing:'ease-out'});
+				});
+				var el = document.getElementsByTagName("header")[0]
+				el.style.top = window.outerHeight / 2 + "px";
+				var newel = document.getElementsByTagName("body")[0]
+				statica();
+				move_func(e);
+				document.onmousemove=move_func;
+				setInterval(function(){
+					date();
+				}, 1000);
+			}
+		</script>
+<script>
+var tempoPolente = 10000;
+var viewport = $(window).width() + 300;
+
+// Animation 
+var polenteAnim = function() { 
+    $("#polente").removeClass('flip').animate({"right": "+="+viewport}, tempoPolente, 'linear',
+            function() {
+                setTimeout(function() {
+                    $("#polente").addClass("flip").animate({"right": "-="+viewport}, tempoPolente, 'linear');
+                }, 1000);
+    });
+polenteAnim();  //recursion
+};
+</script>
+		<style>
+			body{
+				position:relative;
+				background-color:black;
+				overflow:hidden;
+				border:1px dotted rgba(255,0,255,1);
+				height:	1024px;
+				width:1280px;
+				margin-top:0px;
+				margin-left:0px;
+			}
+			header{
+				font-family: 'Michroma', sans-serif;
+				font-size:50px;
+				text-align:center;
+				color:rgba(255,0,255,1);
+				border:1px solid rgba(255,255,0,1);
+
+				position:relative;
+
+				z-index:-1;
+			}
+			section{
+				color:#FF0;
+				position:fixed;
+			}
+			#div_1{
+				position:relative;
+				top:350px;
+				left:250px;
+				width:150px;
+				height:150px;
+				border:1px solid rgba(255,0,0,0);
+			}
+			#div_2{
+				position:relative;
+				width:250px;
+				height:150px;
+				top:-1px;
+				left:-1px;
+				border:1px dotted purple;
+				margin:0px;
+				padding:0px;
+				color:white;
+				opacity:0;
+			}
+			*{
+				cursor: url(beastie64.png), auto;
+				cursor: url(1px.gif), auto;
+			}
+			div {
+				display:inline-block;
+			}
+			@media (max-width: 512px) {
+				*{
+					cursor: url(beastie.png), auto;
+					cursor: url(1px.gif), auto;
+				}
+			}
+			header{
+				display:none;
+			}
+			#image{
+				height:100%;
+				width:100%;
+				border: 1px dotted rgba(255,0,255,0.8);
+			}
+			img{
+				width:10%;
+			}
+			#bst{
+				position:fixed;
+				right:0px;
+				bottom:0px;
+				z-index:1;
+			}
+			.pixelYellow{
+				height:1px;
+				width:1px;
+				border: 1px solid yellow;
+			}
+		</style>
+	</head>
+	<body id="body" onresize="statica();">
+		<section>
+			<div id="datum"></div><br/>
+			Math.random()=<div id="rand"></div><br/>
+			Math.round(Math.random()*100)=<div id="rand100"></div><br/>
+			Math.round(Math.random())=<div id="rand2"></div><br/>
+
+			event.clientX=<div id="clientx"></div><br/>
+			event.clientY=<div id="clienty"></div><br/>
+			event.offsetX=<div id="offsetx"></div><br/>
+			event.offsetY=<div id="offsety"></div><br/>
+			window.outerHeight=<div id="outerheight"></div><br/>
+			window.outerWidth=<div id="outerwidth"></div><br/>
+			window.innerHeight=<div id="innerheight"></div><br/>
+			window.innerWidth=<div id="innerwidth"></div><br/>
+			document.getElementById("div_1").clientWidth=<div id="clientwidth"></div><br/>
+			document.getElementById("div_1").clientHeight=<div id="clientheight"></div><br/>
+			<div id="test"></div>
+			<script>
+				date();
+			</script>
+		</section>"
+		<header id="heder">
+<!--			<script>
+/*
+				setTimeout(function(){
+					document.getElementById("date").innerHTML = Date().getTime();
+				}, 1000);
+*/
+			</script>
+-->
+		</header>
+
+		<div id="div_1">
+			<div id="image"></div>
+		</div>
+		<img id="bst" src="beastie64.png"/>
