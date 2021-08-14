@@ -34,3 +34,4 @@
 
 - https://usk.rs
 - https://github.com/antistereotip/uskrs/blob/master/ZlatniBroj.pdf
+- https://github.com/antistereotip/uskrs/tree/master/src/ng1np
