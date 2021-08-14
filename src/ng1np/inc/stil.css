@@ -1,0 +1,16 @@
+body {background: #222; margin 1% auto; padding: 1%;}
+section {width: 58%; padding:1%; float: left;} 
+aside {width: 38%; padding: 1%; float: left;} 
+nav li { display: inline; padding: 0.5%;} 
+nav li a {color: yellow;}
+footer {width: 98%; padding: 1%; float: left;} 
+p {font-size: 1.3em; color: orangered;}
+p marquee {background: #111; padding: 0.5%;}
+h1 {color: #17f118;}
+h2 {color: orange;}
+h3 {color: #17f888;}
+h4 {color: #67dcc7;}
+h5 {color: #14f338;}
+h6 {color: #17f558;}
+h3 a {color: white;}
+b {color: orangered;}
