@@ -1,0 +1,101 @@
+/* PRE PRAVILA */
+.form-control {
+    border-radius: 0px;
+}
+.btn {
+    border-radius: 0rem;
+}
+.btn-outline-success {
+    color: #7affc1;
+    border-color: #7affc1;
+}
+
+/* -------------------------------------------------------------------------------*/
+/* HERO SEKCIJA */
+.hero-sekcija {
+	background-image: url('../../images/uskrs0.jpg');
+	height: 583px;
+	background-size: cover;
+	color: #333;
+}
+.hero-sekcija .levo {
+  padding: 50px;
+  color: white;
+}
+/* -------------------------------------------------------------------------------*/
+
+
+/* -------------------------------------------------------------------------------*/
+/* SADRZAJ SEKCIJA */
+.sadrzaj-sekcija h1 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.sadrzaj-sekcija h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.sadrzaj-sekcija h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.sadrzaj-sekcija .prvi {
+  background-color: #d54743;
+  padding: 20px;
+}
+.sadrzaj-sekcija .drugi {
+  background-color: #3a8fd8;
+  padding: 20px;
+}
+.sadrzaj-sekcija .treci {
+  background-color: #d9d9d9;
+  padding: 20px;
+}
+/* button prvi */
+.sadrzaj-sekcija .prvi .btn-outline-success {
+  color: #fff;
+  border-color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.sadrzaj-sekcija .prvi .btn-outline-success:hover {
+  background-color: #838383;
+  transition: 1s;
+}
+/* button drugi */
+.sadrzaj-sekcija .drugi .btn-outline-success {
+  color: #fff;
+  border-color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.sadrzaj-sekcija .drugi .btn-outline-success:hover {
+  background-color: #838383;
+  transition: 1s;
+}
+/* button treci */
+.sadrzaj-sekcija .treci .btn-outline-success {
+  color: #111;
+  border-color: #111;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.sadrzaj-sekcija .treci .btn-outline-success:hover {
+  background-color: #838383;
+  transition: 1s;
+}
+/* -------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------*/
+/* FUSNOTA */
+.fusnota {margin-top: 50px; padding: 30px; text-align: center; background: #3a8fd8;}
