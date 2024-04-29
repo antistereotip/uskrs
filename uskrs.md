@@ -11,4 +11,4 @@
 
 #### ROBOTIKA
 
-> Vežite pojas, jer polećemo !!!
+> Vežite pojas, polećemo !!!
