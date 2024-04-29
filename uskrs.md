@@ -13,3 +13,14 @@
 
 > Vežite pojas, polećemo !!!
 
+#### KINERNETIKA UOPŠTENO
+
+> Vežite pojas, polećemo !!!
+
+#### STROJ
+
+> Vežite pojas, polećemo !!!
+
+#### ROBOTIKA GENERALNO
+
+
